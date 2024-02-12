@@ -1,0 +1,144 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140 px;
+    margin: 0 auto;
+}
+
+h3 {
+    color: #fff;
+}
+
+.footer {
+    padding: 10px;
+    text-align: center;
+    max-width: 1140 px;
+    margin: 0 auto;
+    background: #ef98aa;
+}
+
+div {
+    background: #cc3366;
+}
+
+.div-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    text-align: center;
+}
+
+.body-con {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.infor {
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.content-text {
+        background-color: #fff;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    list-style: none;
+    margin-left: 10px;
+}
+
+.menu li:hover {
+    background-color: #e25098;
+    transition: 0.5s;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+img {
+    max-width: 300px;
+}
+
+/* tablet */
+@media only screen and (max-width: 768px) {
+    .div-con {
+        padding: 1rem 0;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        text-align: center;
+    }
+
+    .menu {
+        text-align: center;
+        width: 100%;
+    }
+
+    .menu li {
+        padding: 1rem 0;
+        border-radius: 10px;
+    }
+
+    .menu li:hover {
+        background-color: #e25098;
+        transition: 0.5s;
+    }
+
+    img {
+        width: 200px;
+    }
+
+}
+
+/* phone */
+@media only screen and (max-width: 500px) {
+    .div-con {
+        padding: 1rem 0;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .menu {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .menu li {
+        padding: 1rem 0;
+        border-radius: 10px;
+        margin-left: 0;
+    }
+
+    .menu li:hover {
+        background-color: #e25098;
+        transition: 0.5s;
+    }
+
+    .body-con {
+        flex-direction: column;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.Maincontent {
+    background-color: #fff;
+    justify-content: center;
+    color: black;
+}
