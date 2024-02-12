@@ -1,0 +1,28 @@
+  .content-text {
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+  .resume-heading {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #fff;
+  }
+
+  .resume-subheading {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #fff;
+  }
+
+  .resume-content {
+    font-size: 16px;
+    background-color: #fff;
+  }
+
+  .Maincontent {
+    background-color: #fff;
+    padding: 20px 70px;
+    justify-content: center;
+    color: black;
+}
