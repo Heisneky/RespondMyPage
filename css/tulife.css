@@ -16,8 +16,8 @@
 }
 
 .show-pic {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-around;
     align-items: center;
 }
@@ -28,12 +28,12 @@
 
 @media only screen and (max-width: 768px) {
     .show-pic {
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 }
 
 @media only screen and (max-width: 500px) {
     .show-pic {
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 }

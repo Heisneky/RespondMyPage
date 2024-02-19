@@ -26,7 +26,7 @@ div {
 }
 
 .div-con {
-    display: flex;
+    display: grid;
     justify-content: space-between;
     align-items: center;
     height: 60px;
@@ -36,21 +36,24 @@ div {
 .body-con {
     background-color: #fff;
     padding: 20px;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .infor {
-    flex-direction: column;
     background-color: #fff;
 }
 
 .content-text {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-flow: row;
         background-color: #fff;
 }
 
 .menu {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .menu li {
@@ -76,13 +79,14 @@ img {
 @media only screen and (max-width: 768px) {
     .div-con {
         padding: 1rem 0;
-        flex-direction: column;
         justify-content: center;
         height: auto;
         text-align: center;
+        grid-template-columns: 1fr 1fr;
     }
 
     .menu {
+        grid-auto-flow: column;
         text-align: center;
         width: 100%;
     }
@@ -107,12 +111,12 @@ img {
 @media only screen and (max-width: 500px) {
     .div-con {
         padding: 1rem 0;
-        flex-direction: column;
         height: auto;
     }
 
     .menu {
-        flex-direction: column;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
         text-align: center;
         width: 100%;
     }
@@ -130,6 +134,7 @@ img {
 
     .body-con {
         flex-direction: column;
+        grid-template-columns: 1fr;
     }
 
     img {
